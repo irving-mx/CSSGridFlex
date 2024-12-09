@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --primary-color: #dde7f7;
+    --secundary-color:#9bb2ff;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: grid;
+    grid-template-rows:100px 330px 200px  auto;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+header .header_arrow-return, .header_button-hamburger{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    box-shadow: 
+    10px 10px 15px rgba(0, 0, 0, 0.25),  /* Sombra negra */
+    -10px -10px 15px rgba(255, 255, 255, 0.5), /* Sombra blanca */
+    -5px -5px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca más suave */
+}
+header p{
+    opacity: 50%;
+    font-size: 1.1rem;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    height: 300px;
+    width: 100%;
+}
+
+.card div img{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    border: 7px solid rgba(192, 211, 225, 1); /* Borde de grosor 7px y color #C0D3E1 con 100% de opacidad */
+
+    /* border:20px solid C0D3E1; */
+    object-fit: cover;
+    box-shadow: 
+    10px 10px 15px rgba(0, 0, 0, 0.25),  /* Sombra negra */
+    -10px -10px 15px rgba(255, 255, 255, 0.5), /* Sombra blanca */
+    -5px -5px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca más suave */
+}
+
+.info-music{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-music p, h2{
+    margin-top: 8px;
+    opacity: 70%;
+    font-size: 1.6rem;
+}
+.info-music .minutes-music{
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.info-music img{
+    margin-top: 5px;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 
+    10px 10px 15px rgba(0, 0, 0, 0.25),  /* Sombra negra */
+    -10px -10px 15px rgba(255, 255, 255, 0.5), /* Sombra blanca */
+    -5px -5px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca más suave */
+}
